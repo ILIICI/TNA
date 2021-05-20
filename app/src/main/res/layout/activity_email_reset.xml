@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="30sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailReset">
+    <TextView
+        android:layout_marginTop="50sp"
+        android:id="@+id/oldEmail"
+        android:hint="Display current email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="40sp"
+        android:hint="Introduceti noul email"
+        android:layout_below="@id/oldEmail"
+        android:id="@+id/newEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        android:hint="Confirma noul email"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/newEmail"
+        android:id="@+id/repeatNewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30sp"
+        android:hint="SALVEAZA"
+        android:id="@+id/saveNewPassword"
+        android:layout_below="@id/repeatNewPassword"
+        android:textColorHint="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/find_button_design"
+        android:shadowColor="#9807A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+</RelativeLayout>
